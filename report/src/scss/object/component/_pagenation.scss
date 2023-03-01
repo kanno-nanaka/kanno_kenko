@@ -1,0 +1,33 @@
+/* ------------------------------------------
+  pagenation
+ ------------------------------------------ */
+.c-pagenation {
+  margin: 0 auto;
+  padding-bottom: 3rem;
+  width: fit-content;
+}
+.c-pagenation__list {
+  display: flex;
+  list-style: none;
+}
+.c-pagenation__item {
+  & > a {
+    display: block;
+    padding: 0.3em 0.7em;
+    background-color: $black-600;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
+  &.is-active > a {
+    background-color: $strong-c;
+  }
+  & + .c-pagenation__item {
+    margin-left: 0.5em;
+  }
+  &[data-page="prev"] > a,
+  &[data-page="next"] > a {
+    padding-top: 0.3em;
+  }
+}

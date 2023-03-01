@@ -1,0 +1,61 @@
+/* ------------------------------------------
+  common styles
+ ------------------------------------------ */
+$main-c: #2e3c4e;
+$main-l-c: #aeb2b6;
+$miyazaki-c: #794f01;
+$miyazaki-l-c: #aeb2b6;
+$miyazaki-others-c: #4e2e38;
+$sub-c: #2D1A19;
+$sub-l-c: #8f7f7d;
+$base-c: #2e313d;
+$ishizuka: #794f01;
+$rose-pink: #dd8d7c;
+$rose-red: #cc5940;
+$u-mgb0: 0;
+$u-mgt0: 0;
+$u-mgb1: 1rem;
+$u-mgb2: 2rem;
+$u-mgb4: 4rem;
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial, YuGothic, 'Yu Gothic', 游ゴシック体, '游ゴシック', "ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ", Meiryo,"MS ゴシック","MS Gothic",sans-serif;
+  overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6, p, span, a {
+  color: $base-c;
+  line-height: 1.5;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+a {
+  opacity: 1;
+  transition: all .3s;
+  &:hover {
+    opacity: .6;
+  }
+}
+ul {
+  list-style: none;
+}
+.pc {
+  @include sp {
+    display: none !important;
+  }
+}
+.sp {
+  display: none !important;
+  @include sp {
+    display: block !important;
+  }
+}
+.sp-link {
+  pointer-events: none;
+  text-decoration: none;
+  @include sp {
+    pointer-events: initial;
+    text-decoration: underline;
+  }
+}

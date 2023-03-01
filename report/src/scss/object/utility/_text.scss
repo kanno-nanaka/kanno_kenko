@@ -1,0 +1,31 @@
+/* ------------------------------------------
+  text
+ ------------------------------------------ */
+ .u-link {
+  color: $link-c !important;
+  text-decoration: underline;
+}
+.u-strong {
+  color: $strong-c !important;
+}
+.u-strong--epa {
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+  background-color: $strong-c;
+}
+.u-bold {
+  font-weight: bold;
+}
+.u-font-l {
+  font-size: 1.3em;
+}
+.u-font-s {
+  font-size: .8em;
+}
+.u-align-c {
+  text-align: center;
+}
+.u-align-r {
+  text-align: right;
+}

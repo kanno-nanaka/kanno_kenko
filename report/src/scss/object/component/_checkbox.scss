@@ -1,0 +1,81 @@
+/* ------------------------------------------
+  checkbox
+ ------------------------------------------ */
+.c-checkbox {
+  margin: 3rem 0;
+  @include pc {
+    margin: 5rem 0;
+  }
+}
+.c-checkbox__title {
+  margin-bottom: .4em;
+  color: $main-c;
+  font-weight: bold;
+  text-align: center;
+}
+.c-checkbox__list {
+  position: relative;
+  width: calc(100vw - 40px);
+  margin-top: 10vw;
+  padding: .5rem 1.5rem;
+  background: url('../img/sec02_checkboard_body.png') center center / contain repeat-y;
+  z-index: $z-level-300;
+  @include pc {
+    width: 100%;
+    margin-top: 10%;
+    padding: 1.5rem 3.5rem 1rem;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: -10vw;
+    left: 0;
+    display: block;
+    width: calc(100vw - 40px);
+    height: 10vw;
+    background: url('../img/sec02_checkboard_top.png') center bottom / contain no-repeat;
+    z-index: $z-level-100;
+    @include pc {
+      top: -55px;
+      width: 100%;
+      height: 15%;
+    }
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -10vw;
+    left: 0;
+    display: block;
+    width: calc(100vw - 40px);
+    height: 10vw;
+    background: url('../img/sec02_checkboard_bottom.png') center top / contain no-repeat;
+    z-index: $z-level-100;
+    @include pc {
+      bottom: -55px;
+      width: 100%;
+      height: 14%;
+    }
+  }
+}
+.c-checkbox__item {
+  padding: 1rem 0;
+  border-bottom: 1px dotted #000;
+  list-style: none;
+  font-size: .9rem;
+  line-height: 1.5;
+  user-select: none;
+  @include pc {
+    font-size: 1rem;
+  }
+}
+.c-checkbox__checkbox {
+  display: none;
+  &+.c-checkbox__text {
+    padding-left: 1.5rem;
+    background: url('../img/sec02_checkboard_default.png') left top / contain no-repeat;
+  }
+  &:checked+.c-checkbox__text {
+    background: url('../img/sec02_checkboard_checked.png') left top / contain no-repeat;
+  }
+}

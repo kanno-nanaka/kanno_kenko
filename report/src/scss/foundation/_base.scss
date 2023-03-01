@@ -1,0 +1,59 @@
+/* ------------------------------------------
+  common styles
+ ------------------------------------------ */
+* {
+  box-sizing: border-box;
+}
+body {
+  // font-family: Linotte, YuGothic, "Yu Gothic", 游ゴシック体, 游ゴシック, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Roboto, メイリオ, Meiryo, "ＭＳ Ｐゴシック", Osaka, "MS PGothic", Arial, Helvetica, Verdana, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, YuGothic, "Yu Gothic",
+    游ゴシック体, "游ゴシック", "ヒラギノ角ゴ ProN W3",
+    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS ゴシック", "MS Gothic",
+    sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+main {
+  background: linear-gradient($background-c 0%, #fff 50%, $background-c 100%);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a {
+  color: $base-c;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+a {
+  opacity: 1;
+  transition: all 0.3s;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+details > summary {
+  cursor: pointer;
+  user-select: none;
+}
+.pc {
+  display: none;
+  @include pc {
+    display: block;
+  }
+}
+.sp {
+  display: block;
+  @include pc {
+    display: none;
+  }
+}

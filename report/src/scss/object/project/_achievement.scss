@@ -1,0 +1,28 @@
+/* ------------------------------------------
+  achievement
+ ------------------------------------------ */
+.p-achievement__title {
+  text-align: center;
+  &--primary {
+    margin-bottom: 1rem;
+    padding: .5rem 0;
+    border-top: 1px solid $main-l-c;
+    border-bottom: 1px solid $main-l-c;
+    color: $main-l-c;
+    font-size: 1.1rem;
+  }
+  &--secondary {
+    padding: .2rem 0;
+    background-color: $main-c;
+    color: #fff;
+    font-size: 1.05rem;
+    @include font-shippori(bold);
+  }
+  &--third {
+    margin-bottom: 1rem;
+    padding: .5rem 0;
+    border-top: 1px solid $main-l-c;
+    border-bottom: 1px solid $main-l-c;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+// 幅
+$base_width: 640px;
+$max_width: 100%;
+$min_width: 640px;
+$main_width: 640px;
+$side_width: 220px;
+
+// フォントカラー
+$font_color: #1F1F1F;
+$title_color: #333;
+
+// リンクカラー
+$link_color: $font_color;
+$link_color_visited: $font_color;
+$link_color_hover: $font_color;
+$link_color_active: $font_color;
+
+
+$base_color: #fff;
+$sub_color: #0074D6;
+
+$setPrefix: -webkit-, -moz-, -o-, null;
+
+// 付与するベンダープレフィックス
+$prefixList: -webkit-, -moz-, -ms-, -o-, null;
+
+
+@mixin flexLayout($justify-content: space-between) {
+		@each $prefix in $prefixList {
+			display: #{$prefix}flex;
+			#{$prefix}justify-content: $justify-content;
+		}
+}
+
+// ブレイクポイントを設定
+$bp-sp: 750px;
+$bp-iphone: 320px;
+
+// メディアクエリ用のミックスイン
+@mixin media($media-width) {
+	@if $media-width == sp {
+		@media only screen and (max-width: $bp-sp) {
+			@content;
+		}
+	}
+	@else if $media-width == iphone {
+		@media only screen and (max-width: $bp-iphone) {
+			@content;
+		}
+	}
+	@else if $media-width == pc {
+		@media only screen and (min-width: ($bp-sp + 1)) {
+			@content;
+		}
+	}
+	@else if $media-width == base_width {
+		@media only screen and (min-width: ($base_width + 1)) {
+			@content;
+		}
+	}
+}

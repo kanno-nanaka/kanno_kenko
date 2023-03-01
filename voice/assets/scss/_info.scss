@@ -1,0 +1,41 @@
+/* ------------------------------------------
+  info
+ ------------------------------------------ */
+.info {
+  h2 {
+    font-size: 1.4rem;
+    margin-top: 3rem;
+    @include sp {
+      margin-top: 0;
+    }
+  }
+  table {
+    margin-bottom: 100px;
+    tr {
+      line-height: 2rem;
+    }
+    th, td {
+      padding: 10px 20px;
+      border: 1px solid #ccc;
+    }
+  }
+  .info__back {
+    display: block;
+    color: darken($sub-l-c, 50%);
+    text-align: center;
+  }
+  @include sp {
+    padding: 40px 20px;
+  }
+  .info__contact {
+    @include sp {
+      flex-direction: column;
+    }
+  }
+  .info__contact dt {
+    margin-right: 1rem;
+  }
+  .info__contact .email {
+    color: darken($sub-l-c, 25%);
+  }
+}

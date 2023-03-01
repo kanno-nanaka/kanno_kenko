@@ -1,0 +1,34 @@
+/* ------------------------------------------
+  title
+ ------------------------------------------ */
+.c-title {
+  margin-bottom: 1rem;
+  &--primary {
+    margin-right: -20px;
+    margin-left: -20px;
+    padding: .5em 20px;
+    background-color: $main-c;
+    font-size: 1.3rem;
+    @include font-shippori(bold);
+    color: #fff;
+  }
+  &--secondary {
+    padding: 1rem 0;
+    border-top: 2px solid $main-l-c;
+    border-bottom: 2px solid $main-l-c;
+    color: $main-l-c;
+    font-size: 1.5rem;
+  }
+}
+.c-title--s {
+  font-size: .8em;
+  color: inherit;
+}
+.c-title--primary__epa {
+  background-color: #fff;
+  color: $main-c;
+}
+.c-title--secondary__epa {
+  color: #fff;
+  background-color: $main-l-c;
+}

@@ -1,0 +1,15 @@
+<div class="c-pagenation">
+  <ul class="c-pagenation__list">
+    <!-- P1のときは「前へ」を非表示 -->
+    <% if (data.page.path > 1) { %>
+      <li class="c-pagenation__item" data-page="prev"><a href="../../pages/<%= data.page.path - 1 %>/" class="u-font-s">前へ</a></li>
+    <% } %>
+    <li class="c-pagenation__item <%= data.page.path === 1?'is-active':'' %>" data-page="1"><a href="../../pages/1/">1</a></li>
+    <li class="c-pagenation__item <%= data.page.path === 2?'is-active':'' %>" data-page="2"><a href="../../pages/2/">2</a></li>
+    <li class="c-pagenation__item <%= data.page.path === 3?'is-active':'' %>" data-page="3"><a href="../../pages/3/">3</a></li>
+    <!-- P3のときは「次へ」を非表示 ※ページ数が変わったらif文の中の "< 3" の数字を要変更 -->
+    <% if (data.page.path < 3) { %>
+      <li class="c-pagenation__item" data-page="next"><a href="../../pages/<%= data.page.path + 1 %>/" class="u-font-s">次へ</a></li>
+    <% } %>
+  </ul>
+</div>

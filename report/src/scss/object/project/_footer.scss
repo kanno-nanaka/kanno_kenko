@@ -1,0 +1,45 @@
+/* ------------------------------------------
+  footer
+ ------------------------------------------ */
+.p-footer {
+  position: relative;
+  width: 100%;
+}
+.p-footer__inner {
+  padding: 40px 0 30px;
+  text-align: center;
+}
+.p-footer__logo {
+  display: block;
+  max-width: 200px;
+  margin: 20px auto;
+}
+.p-footer__totop {
+  display: flex;
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $black-300;
+  font-size: 1.6rem;
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+  cursor: pointer;
+  transition: all .3s;
+  // scroll-behavior: smooth;
+  &:hover {
+    opacity: .7;
+  }
+  @include pc {
+    width: 60px;
+    height: 60px;
+  }
+}
+@include pc {
+  padding-bottom: 0;
+}

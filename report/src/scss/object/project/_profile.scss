@@ -1,0 +1,16 @@
+/* ------------------------------------------
+  profile
+ ------------------------------------------ */
+.p-profile {
+  padding: 0 1rem 1rem;
+  background-color: #fff;
+  box-shadow: 2px 2px 6px rgba(83, 83, 83, .2);
+  .c-letter {
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid $black-300;
+  }
+}
+.p-profile__image {
+  margin: auto -20px 1rem;
+ }

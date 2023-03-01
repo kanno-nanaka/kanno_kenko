@@ -1,0 +1,230 @@
+<%
+  const projectRootPath = '../../../../';
+  const componentPath = `${projectRootPath}components/`;
+  const meta = {
+    description: '「小林式EPA」は、誰にでも起こりうる「血管の異常収縮」を抑える唯一の成分。血管病による突然死の多くに関わる「血管の異常収縮」のメカニズムと予防成分「小林式EPA」について詳しく解説します。',
+  }
+%>
+<!doctype html><html>
+
+<%- include(`${componentPath}_head`, { projectRootPath, meta }); %>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Q8PF7"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="wrap">
+  <!-- header -->
+  <header>
+    <p><img src="<%= projectRootPath %>assets/img/mv_img01.jpg" alt="山口大学医学部 小林誠教授 研究レポート"></p>
+    <p><img src="<%= projectRootPath %>assets/img/mv_img02.jpg" alt="血管病の予防に小林式EPA 誰でも起こる血管の異常収縮を抑制するために。"></p>
+    <p><img src="<%= projectRootPath %>assets/img/mv_img03.gif" alt="片頭痛、狭心症、動悸などは血管に異常な収縮が起きているかもしれません。"></p>
+  </header>
+  <!-- /header -->
+  <article>
+    <!-- check -->
+    <section id="check" class="check">
+      <h1><img src="<%= projectRootPath %>assets/img/check_img01.gif" alt="あなたの血管は大丈夫？お悩みチェックリスト"></h1>
+      <p><img src="<%= projectRootPath %>assets/img/check_img02.gif" alt="あてはまる症状にチェックしてください"></p>
+      <ul class="check__list">
+        <li class="check__list__item">
+          <input type="checkbox" id="check__list__item01" name="checkbox01">
+          <label for="check__list__item01" class="check__list__checkbox"><span class="check__list--emphasize">めまい</span>や<span class="check__list--emphasize">頭痛</span>が頻繁に起こる</label>
+        </li>
+        <li class="check__list__item">
+          <input type="checkbox" id="check__list__item02" name="checkbox01">
+          <label for="check__list__item02" class="check__list__checkbox"><span class="check__list--emphasize">激しい動悸</span>や<span class="check__list--emphasize">繰り返す胸の痛み</span><br>が頻繁にある</label>
+        </li>
+        <li class="check__list__item">
+          <input type="checkbox" id="check__list__item03" name="checkbox01">
+          <label for="check__list__item03" class="check__list__checkbox">目がチカチカして<span class="check__list--emphasize">視界が悪くなる</span></label>
+        </li>
+        <li class="check__list__item">
+          <input type="checkbox" id="check__list__item04" name="checkbox01">
+          <label for="check__list__item04" class="check__list__checkbox">早くなったり遅くなったり<br><span class="check__list--emphasize">脈の乱れ</span>を感じる</label>
+        </li>
+        <li class="check__list__item">
+          <input type="checkbox" id="check__list__item05" name="checkbox01">
+          <label for="check__list__item05" class="check__list__checkbox">健康診断で<span class="check__list--emphasize">コレステロール値が<br>高め</span>だった</label>
+        </li>
+        <li class="check__list__item">
+          <input type="checkbox" id="check__list__item06" name="checkbox01">
+          <label for="check__list__item06" class="check__list__checkbox">常に<span class="check__list--emphasize">疲労感・倦怠感</span>がある</label>
+        </li>
+        <li class="check__list__item">
+          <input type="checkbox" id="check__list__item07" name="checkbox01">
+          <label for="check__list__item07" class="check__list__checkbox"><span class="check__list--emphasize">冷え</span>がおさまりにくい</label>
+        </li>
+        <li class="check__list__item">
+          <input type="checkbox" id="check__list__item08" name="checkbox01">
+          <label for="check__list__item08" class="check__list__checkbox">頻繁に<span class="check__list--emphasize">耳鳴り</span>がする</label>
+        </li>
+      </ul>
+      <p><img src="<%= projectRootPath %>assets/img/check_img03.gif" alt=""></p>
+      <p><img src="<%= projectRootPath %>assets/img/check_img04.gif" alt="1つでもあてはまった方は血管の異常収縮が起きているサインかもしれません。放っておくと…"></p>
+      <p><img src="<%= projectRootPath %>assets/img/check_img05.jpg" alt="心筋梗塞・狭心症・脳梗塞 といった大きな症状を引き起こす可能性があります。"></p>
+    </section>
+    <!-- /check -->
+    <!-- report -->
+    <!-- <section class="report__movie">
+      <img src="<%= projectRootPath %>assets/img/movie_title.png" alt="" width="1280" height="134">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/EJZ5luHPsxs" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </section> -->
+    <section class="report">
+      <h1><img src="<%= projectRootPath %>assets/img/report_img01.gif" alt="血管の異常収縮のメカニズムを解明した小林誠教授に詳しくお聞きしました！"></h1>
+      <p class="report__maintext">世界に先駆けて血管の異常収縮の原因分子を発見し、メカニズムも解明。血管に関する病気の撲滅に向けて日々研究を続けています。</p>
+      <p class="report__maininfo"><span class="report__maininfo--line">《 略歴 》<br>1980年九州大学医学部卒業後、同大学循環器内科入局。米国医師国家試験（ECFMG）にも合格。1985年に世界で初めて、カルシウムイオンの測定に成功。その後渡米し、ペンシルベニア大学、バージニア大学、九州大学の助教授を経て、1996年より山口大学で教授職を務める。2021年4月からは山口大学医学部の先進予防医学講座の特命教授を務める。</span></p>
+      <section class="report__no01">
+        <div class="report__inner">
+          <h2><img src="<%= projectRootPath %>assets/img/report_no01_img01.gif" alt="そもそも血管の収縮って何？"></h2>
+          <p class="report__area report__area--space">血管の収縮には<br>「<span class="report__area--bold">正常収縮</span>」と「<span class="report__area--bold">異常収縮</span>」があります。</p>
+          <div class="report__area">
+            <dl class="report__list">
+              <dt>血管の正常収縮とは?</dt>
+              <dd>全身のスムーズな血流を維持するために、血管が縮んだり伸びたりする事で血圧をコントロールする、生命活動にはなくてはならないものです。</dd>
+              <dt>血管の<span class="report__list--red">異常収縮</span>とは?</dt>
+              <dd>スムーズに流れていた<span class="report__list--red">血管が突然ギュッと縮んで血流をせきとめてしまう</span>恐ろしい現象のことです。</dd>
+            </dl>
+          </div>
+          <p class="report__floatarea">
+            <img class="report__floatarea--normal" src="<%= projectRootPath %>assets/img/report_no01_img02l.gif" alt="正常収縮">
+            <img class="report__floatarea--abnormal" src="<%= projectRootPath %>assets/img/report_no01_img02r.gif" alt="異常収縮">
+            <img src="<%= projectRootPath %>assets/img/report_no01_img02bg.gif" alt="正常収縮 異常収縮">
+          </p>
+          <p class="report__area report__area--bold report__area--fsmid">つまり、血管の異常収縮は<br><span class=" report__area--fsbig">さまざまな病気や症状に関わってくる</span><br>可能性があります</p>
+          <p><img src="<%= projectRootPath %>assets/img/report_no01_img03.jpg" alt="身近なものだと… 動悸・胸の痛み 頭痛 めまい　重篤の場合… 狭心症 不整脈 脳梗塞 心筋梗塞"></p>
+          <p><img src="<%= projectRootPath %>assets/img/report_no01_img04.gif" alt="実際の症例 脳の血管で異常収縮が起きた場合"></p>
+          <p class="report__floatarea">
+            <img src="<%= projectRootPath %>assets/img/report_no01_img05.gif" alt="発症前 発症後">
+            <img class="report__floatarea--float02" src="<%= projectRootPath %>assets/img/report_no01_img05arr.png" alt="発症前 発症後">
+          </p>
+          <div class="report__close">
+            <p class="report__close--text01">矢印の場所をきっかけに広範囲で<br><span class="report__close--red">血管がギュッと収縮している状態です。</span></p>
+            <p class="report__close--text02"><span class="report__close--line"><span class="report__close--red">脳梗塞</span>を起こしかねない</span><br><span class="report__close--line">危険な状態</span></p>
+          </div>
+        </div>
+      </section>
+      <section class="report__no02">
+        <div class="report__inner">
+          <h2><img src="<%= projectRootPath %>assets/img/report_no02_img01.gif" alt="どのようにして血管の異常収縮を抑えるの？"></h2>
+          <p class="report__area">血管の異常収縮は原因不明とされ<br>治療法がわからず長年恐れられてきました。<br>しかし、山口大学医学部の<br>小林誠教授と研究チームによって、<br>15年もの歳月をかけ研究を続けた結果・・・</p>
+          <p><img src="<%= projectRootPath %>assets/img/report_no02_img02.gif" alt="世界初 血管の異常収縮のメカニズムを解明！"></p>
+          <div class="report__area">
+            <dl class="report__list">
+              <dt>血管の異常収縮は<span class="report__list--red">SPC</span>によって<br>起こることを解明</dt>
+              <dd>2000年に山口大学の小林教授と研究チームによって世界で初めてメカニズムが解明され、<span class="report__list--red report__list--uline">SPCという脂質が血管に異常収縮を引き起こしている</span>ことが明らかになりました。医学界からも大発見と称賛され、高評価を受けています。</dd>
+            </dl>
+          </div>
+          <p><img src="<%= projectRootPath %>assets/img/report_no02_img03.jpg" alt="医学雑誌「Circulation Research」※に掲載"></p>
+          <p><img src="<%= projectRootPath %>assets/img/report_no02_img04.gif" alt="世界初 血管の異常収縮を抑える物質がEPAであることを発見！"></p>
+          <div class="report__area">
+            <dl class="report__list">
+              <dt>青魚の油に含まれる<span class="report__list--red">EPA</span>に抑制<br>効果があることを発見</dt>
+              <dd>メカニズム解明後、特効薬の開発を目的とした研究をはじめました。血管の異常収縮の原因であるSPCを抑制する研究の過程で<span class="report__list--red report__list--uline">魚油に含まれる「EPA」が血管の正常収縮を抑制せず「異常収縮」のみを抑制できることを世界で初めて発見。</span></dd>
+            </dl>
+          </div>
+          <p><img src="<%= projectRootPath %>assets/img/report_no02_img05.jpg" alt="EPA"></p>
+        </div>
+      </section>
+      <p><img src="<%= projectRootPath %>assets/img/report_img03.gif" alt="血管の異常収縮を抑えるのは意外にも薬ではなく、食品に含まれるEPAでした！"></p>
+    </section>
+    <!-- /report -->
+    <!-- compare -->
+    <section class="compare">
+      <h1><img src="<%= projectRootPath %>assets/img/compare_img01.gif" alt="そこで開発したのが 食品成分 小林式EPA 一般的なEPAとは違い血管の異常収縮を防げるのは小林式EPAだけ！"></h1>
+      <p><img src="<%= projectRootPath %>assets/img/compare_img02.gif" alt="一般的なEPAと小林式EPAの比較"></p>
+      <p><img src="<%= projectRootPath %>assets/img/compare_img03.jpg" alt="一般的なEPA 立体構造が変化してしまう 抑制作用弱・小林式EPA 立体構造を保ったまま 抑制作用強"></p>
+      <p><img src="<%= projectRootPath %>assets/img/compare_img04.gif" alt="つまり小林式EPAは、生の青魚そのままの立体構造を保っているから、血管の異常収縮を劇的に抑制！"></p>
+    </section>
+    <!-- /compare -->
+    <!-- inspection -->
+    <section class="inspection">
+      <h1><img src="<%= projectRootPath %>assets/img/inspection_img01.gif" alt="検証実験 小林式EPAを加えて血管の異常収縮を抑える実験"></h1>
+      <p><img src="<%= projectRootPath %>assets/img/inspection_img02.gif" alt="正常な収縮の血管"></p>
+      <p class="inspection__floatarea">
+        <img class="inspection__floatarea--float01" src="<%= projectRootPath %>assets/img/inspection_img03.gif" alt="正常な収縮の血管">
+        <img src="<%= projectRootPath %>assets/img/inspection_img03bg.gif" alt="">
+      </p>
+      <p><img src="<%= projectRootPath %>assets/img/inspection_img04.gif" alt="工程"></p>
+      <ul class="inspection__textarea">
+        <li>正常な収縮の血管に、異常収縮の原因物質“SPC”を加える。</li>
+        <li>異常収縮を起こした血管に、<span class="inspection__textarea--red">小林式EPAを加える。</span></li>
+      </ul>
+      <p><img src="<%= projectRootPath %>assets/img/inspection_img05.gif" alt="血管の異常収縮が起きた状態に 血管の正常な収縮の状態に"></p>
+      <p class="inspection__floatarea">
+        <img class="inspection__floatarea--float02" src="<%= projectRootPath %>assets/img/inspection_img06left.gif" alt="血管の異常収縮が起きた状態に">
+        <img class="inspection__floatarea--float03" src="<%= projectRootPath %>assets/img/inspection_img06right.gif" alt="血管の正常な収縮の状態に">
+        <img src="<%= projectRootPath %>assets/img/inspection_img06bg.jpg" alt="">
+      </p>
+      <p><img src="<%= projectRootPath %>assets/img/inspection_img07.gif" alt="結果 小林式EPAを加えることによって異常収縮を起こした血管が元通りに！"></p>
+      <div class="inspection__moviearea">
+        <p class="inspection__moviearea--movie"><video src="<%= projectRootPath %>assets/img/inspection_movie.mp4" poster="<%= projectRootPath %>assets/img/inspection_movie_poster.png" controls playsinline></video></p>
+        <img src="<%= projectRootPath %>assets/img/inspection_img08bg.gif" alt="実際の実験を見てみると…">
+      </div>
+      <p class="inspection__tether--text">さらに、小林式EPAは<br><span class="inspection__tether--line">正常収縮には影響しないことも</span><br><span class="inspection__tether--line">確認しています。</span></p>
+      <p><img src="<%= projectRootPath %>assets/img/inspection_img09.gif" alt="血管病予防に効果を有する食品組成分として特許を取得しています"></p>
+      <p class="inspection__patent">「小林式EPA」は精製法を見直して、<span class="inspection__patent--imptext">生の青魚の立体構造を保ったまま精製することに成功。</span><br>さらに、小林教授の研究室で実際に「血管の異常収縮」を抑制することを確認したものだけが<span class="inspection__patent--imptext">「小林式EPA」</span>と呼ばれています。<br>これにより、小林教授と研究チームはこの研究で<span class="inspection__patent--imptext">「血管病予防に効果を有する食品組成物」として特許を取得しています。</span></p>
+      <p><img src="<%= projectRootPath %>assets/img/inspection_img10.jpg" alt="特許証"></p>
+      <p><img src="<%= projectRootPath %>assets/img/inspection_img11.gif" alt="しっかり予防！"></p>
+      <div class="inspection__close">
+        <p class="inspection__close--text01">薬は病気になった｢あと｣にしか服用できないのに対して、<br><span class="inspection__close--imptext">小林式EPAは食品成分だから</span><br><span class="inspection__close--imptext">「事前」の摂取が可能。</span></p>
+        <p class="inspection__close--text02">継続的に小林式EPAを摂取することで、<br><span class="inspection__close--imptext inspection__close--red">さまざまな病気や症状に関わる</span><br><span class="inspection__close--imptext inspection__close--red">「血管の異常収縮」を防ぐことができるのです。</span></p>
+      </div>
+      <p><img src="<%= projectRootPath %>assets/img/inspection_img12.jpg" alt="健康リスクを減らすために小林式EPAは大事なキーワードです。"></p>
+    </section>
+    <!-- /inspection -->
+    <!-- biography -->
+    <section class="biography">
+      <h1><img src="<%= projectRootPath %>assets/img/biography_img01.png" alt="BIOGRAPHY 山口大学医学部 小林誠教授 略歴"></h1>
+      <p class="biography__area">1980年九州大学医学部卒業後、同大学循環器内科入局。<br>米国医師国家試験（ECFMG）にも合格。<br>1985年に世界で初めて、カルシウムイオンの測定に成功する。その後渡米し、ペンシルベニア大学、バージニア大学、九州大学の助教授を経て、1996年より山口大学で教授職を務める。<br>2021年4月から山口大学医学部の先進予防医学講座の特命教授を務める。<br>世界に先駆けて、「血管の異常収縮」の原因分子を発見し、そのメカニズムも解明。さらに特殊な立体構造のEPAによる阻害効果も発見。現在も『血管病の撲滅』を掲げ、日々研究を続けている。</p>
+      <p class="biography__boxtitle">
+        <img class="biography__boxtitle--icon01" src="<%= projectRootPath %>assets/img/biography_icon.png" alt="世界初">
+        <img src="<%= projectRootPath %>assets/img/biography_img02.jpg" alt="1985年 カルシウムイオンの測定に成功">
+      </p>
+      <p class="biography__boxarea">正常な筋収縮を起こす血管平滑筋細胞内のカルシウムイオン濃度の異常上昇が、「血管の異常収縮」を引き起こす要因であると考えた小林教授は、<span class="biography__boxarea--imptext">カルシウムイオンの測定に世界で初めて成功。</span>世界屈指の学術雑誌『Science』にて論文を発表し、世界の注目を集めました。</p>
+      <p class="biography__boxtitle">
+        <img class="biography__boxtitle--icon02" src="<%= projectRootPath %>assets/img/biography_icon.png" alt="世界初">
+        <img src="<%= projectRootPath %>assets/img/biography_img03.jpg" alt="2000年  ｢血管の異常収縮｣のメカニズム解明に成功">
+      </p>
+      <p class="biography__boxarea">小林教授と研究チームは、度重なる研究の末、2000年、世界で初めて「血管の異常収縮」のメカニズムを解明しました。そして、SPC（スフィンゴシル・ホスホリル・コリン）という脂質が「血管の異常収縮」を引き起こしていることを突き止めたのです。それは、生物学の常識であったカルシウムイオンによる血管の収縮とはまったく違うメカニズムで起きていました。<br>さらに、原因物質であるSPCは、細胞膜の構成成分から簡単に作り出されてしまうため、<span class="biography__boxarea--imptext">カルシウムイオンによる血管の収縮とはまったく違う「誰にでも血管の異常収縮が起きる可能性がある」ことが明らかになったのです。</span></p>
+      <dl class="biography__boxarea biography__boxarea--list">
+        <dt>SPCによって引き起こされる広範囲の異常収縮！</dt>
+        <dd>実際に、SPCが「血管の異常収縮」を引き起こすのかを確認するため、モデル動物の脳血管にSPCを投与する実験を行いました。すると、<span class="biography__boxarea--imptext">SPCを一回投与しただけで２時間もの長い間、広範囲で激しい「血管の異常収縮」が認められました。</span></dd>
+      </dl>
+      <p class="biography__boxtitle">
+        <img class="biography__boxtitle--icon03" src="<%= projectRootPath %>assets/img/biography_icon.png" alt="世界初">
+        <img src="<%= projectRootPath %>assets/img/biography_img04.jpg" alt="2002年 EPAの｢血管の異常収縮｣抑制作用を発見">
+      </p>
+      <p class="biography__boxarea">メカニズム解明後、特効薬の開発に着手し、<span class="biography__boxarea--imptext">魚油のEPAが血管の正常収縮を抑制せず「異常収縮」のみを抑制できることを世界で初めて発見。</span><br>医学界で大変話題となりました。小林教授らの研究成果は、最終的に医学雑誌『Circulation Research』に3度掲載され、2度も編集者に特別に紹介されるという極めて稀な評価を受けたのです。</p>
+      <p><img src="<%= projectRootPath %>assets/img/biography_img05.jpg" alt="世界的に権威のある医学雑誌に掲載、メディアにも絶賛されました"></p>
+      <div class="biography__boxarea">
+        <p class="biography__boxarea--date">《 2002年 》</p>
+        <p class="biography__boxarea--title">NEDOの助成対象事業に採択される</p>
+        <p>｢小林式EPA｣の研究開発が経済産業省所管の出資機関NEDOの助成対象事業に採択されました。<span class="biography__boxarea--imptext">食品における研究が助成の対象になることは非常に稀で、その有益性が高く評価された出来事と言えます。</span></p>
+      </div>
+      <p><img src="<%= projectRootPath %>assets/img/biography_img06.png" alt="※NEDO:国立研究開発法人新エネルギー・産業技術総合開発機構"></p>
+      <div class="biography__boxarea">
+        <p class="biography__boxarea--date">《 2013年 》</p>
+        <p class="biography__boxarea--title">公益社団法人発明協会の<br>会長奨励賞を受賞</p>
+        <p><span class="biography__boxarea--imptext">EPAの発見と体内吸収量増加の研究が評価され、公益社団法人発明協会の会長奨励賞を受賞。</span><br>優れた発明や意匠を生み出した技術者・研究開発者を顕彰する伝統ある会で、その中でも最高位の賞で表彰されました。</p>
+      </div>
+      <p><img src="<%= projectRootPath %>assets/img/biography_img07.jpg" alt="公益社団法人発明協会の会長奨励賞を受賞"></p>
+      <div class="biography__boxarea">
+        <p class="biography__boxarea--date">《 2013年・2014年 》</p>
+        <p class="biography__boxarea--title">｢血管病予防食品｣の研究成果が<br>2つの特許を取得</p>
+        <p>2005年より<span class="biography__boxarea--imptext">「小林式EPA」の研究開発、</span>および<span class="biography__boxarea--imptext">EPAの体内吸収量を高める研究</span>を行ってきたその成果が「血管病予防に効果を有する食品組成物」として、2013年、2014年に相次いで<span class="biography__boxarea--imptext">2つの特許を取得しました。</span></p>
+      </div>
+      <p><img src="<%= projectRootPath %>assets/img/biography_img08.jpg" alt="｢血管病予防食品｣の研究成果が2つの特許を取得"></p>
+    </section>
+    <!-- /biography -->
+  </article>
+  <!-- footer -->
+  <%- include(`${componentPath}_footer`, { projectRootPath }) %>
+  <!-- /footer -->
+  </div>
+</body>
+</html>

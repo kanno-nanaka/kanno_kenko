@@ -1,0 +1,59 @@
+/* ------------------------------------------
+  utility
+ ------------------------------------------ */
+.u-link {
+  color: blue!important;
+  text-decoration: underline!important;
+}
+.u-strong {
+  color: red!important;
+}
+.u-bold {
+  font-weight: bold!important;
+}
+.u-highlight {
+  background: linear-gradient(to top, rgb(255, 254, 175) 0%, rgba(255, 255, 255, 0) 60%)!important;
+}
+.u-font-l {
+  font-size: 1.3em!important;
+}
+.u-font-s {
+  font-size: .8em!important;
+}
+.u-font-m {
+  font-size: 1.1rem!important;
+}
+.u-align-c {
+  text-align: center!important;
+}
+.u-align-l {
+  text-align: left!important;
+}
+.u-align-r {
+  text-align: right!important;
+}
+//margin-bottom
+.u-mgb-0 {
+  margin-bottom: $u-mgb0!important;
+}
+.u-mgb-l {
+  margin-bottom: $u-mgb4!important;
+}
+.u-mgb-m {
+  margin-bottom: $u-mgb2!important;
+}
+.u-mgb-s {
+  margin-bottom: $u-mgb1!important;
+}
+
+//margin-top
+.u-mgt-0 {
+  margin-top:$u-mgt0!important;
+}
+
+.u-text-pre {
+  white-space: pre!important;
+}
+.u-style-type {
+  display: inherit;
+}

@@ -1,0 +1,12 @@
+/* ------------------------------------------
+  mixin
+ ------------------------------------------ */
+ @mixin pc {
+  @media screen and (min-width: 960px) {
+    @content;
+  }
+}
+@mixin font-shippori($weight: 400) {
+  font-family: 'Shippori Mincho', serif;
+  font-weight: $weight
+}

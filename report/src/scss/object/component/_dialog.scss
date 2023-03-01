@@ -1,0 +1,12 @@
+/* ------------------------------------------
+  dialog
+------------------------------------------ */
+.c-dialog {
+  margin-bottom: 2rem;
+}
+.c-dialog--caution {
+  padding: .6rem 0;
+  background-color: $strong-c;
+  color: #fff;
+  font-weight: bold;
+}

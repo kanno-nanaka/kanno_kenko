@@ -1,0 +1,19 @@
+/* ------------------------------------------
+  P1 introduction
+ ------------------------------------------ */
+.p-introduction__title {
+  padding: 2rem 1rem;
+}
+.p-introduction__lead {
+  background-color: $black-100;
+  padding: 1.5rem 0;
+  border: 1px solid $accent-c;
+  color: $accent-c;
+  font-weight: bold;
+  text-align: center;
+}
+.p-introduction__text {
+  margin: 1.5rem 0;
+  font-weight: bold;
+  text-align: center;
+}
